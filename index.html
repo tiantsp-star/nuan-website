@@ -371,7 +371,8 @@ footer a{color:#F2D9A8}
 (function(){
   var d=document.documentElement,b=document.querySelector('.langsw');if(!b)return;
   function set(l){d.classList.toggle('lang-lo',l==='lo');d.lang=l==='lo'?'lo':'en';b.setAttribute('aria-label',l==='lo'?'Change language: English':'ປ່ຽນພາສາ: ລາວ');try{localStorage.setItem('nuanLang',l);}catch(e){}}
-  b.addEventListener('click',function(){set(d.classList.contains('lang-lo')?'en':'lo');});
+  function anchor(){var h=(document.querySelector('header.top')||{offsetHeight:0}).offsetHeight;var y=h+12,el=null;for(var x of [window.innerWidth/2,40,window.innerWidth-40]){el=document.elementFromPoint(x,y);if(el&&el!==document.body&&el!==d)break;}if(!el)return null;var c=el.closest('.en,.lo');while(c){el=c.parentElement;c=el&&el.closest('.en,.lo');}while(el&&el.getBoundingClientRect().height>window.innerHeight*1.5&&el.firstElementChild)el=el.firstElementChild&&[].find.call(el.children,function(k){var r=k.getBoundingClientRect();return r.bottom>y&&!k.matches('.en,.lo');})||null;return el;}
+  b.addEventListener('click',function(){var a=window.scrollY>20?anchor():null,t=a?a.getBoundingClientRect().top:0;set(d.classList.contains('lang-lo')?'en':'lo');if(a){var n=a.getBoundingClientRect().top;window.scrollBy({top:n-t,behavior:'instant'});}});
 })();
 </script>
 <script src="js/page-flip.browser.js"></script>
