@@ -95,6 +95,31 @@ h2 + .sub{text-align:center;margin:0 0 28px;color:#6b4a3a}
 body.nav-open{overflow:hidden}
 section[id]{scroll-margin-top:72px}
 @media(prefers-reduced-motion:reduce){.mnav{animation:none}.burger span{transition:none}}
+#happy-hour{margin-top:22px}#play{margin-top:22px}
+.promos{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:18px;margin-bottom:6px}
+.promo{background:#fff;border-radius:18px;overflow:hidden;border:1.5px solid rgba(201,154,60,.6)}.promo img{width:100%;aspect-ratio:4/3;object-fit:cover;display:block}.promo>div{padding:16px 18px}
+.promo .when{margin:0 0 4px;color:var(--j);font-weight:700;font-size:14px}.promo h3{margin:0 0 6px;font-family:ISerif;font-weight:400;font-size:26px;color:var(--m)}.promo h3 span{display:block;font-size:15px;color:var(--w);opacity:.75}
+.play2{display:grid;grid-template-columns:260px 1fr;gap:28px;align-items:center}
+.phone{background:#2a1a12;border-radius:28px;padding:8px;box-shadow:4px 4px 0 rgba(74,44,32,.25)}.phone video{display:block;width:100%;aspect-ratio:9/16;border-radius:21px;background:#000;object-fit:cover}
+.ph{font-family:ISerif;font-weight:400;font-size:36px;color:var(--m);margin:0 0 8px}.ph span{display:block;font-size:16px;color:var(--w);opacity:.75}
+.gchips{display:flex;flex-wrap:wrap;gap:8px;margin-top:14px}
+.gchips button{font:inherit;font-weight:700;font-size:14px;border:1.5px solid var(--m);background:#fff;color:var(--m);border-radius:99px;padding:6px 14px;cursor:pointer;display:flex;flex-direction:column;align-items:center;line-height:1.2}
+.gchips button span{font-weight:500;font-size:12px;opacity:.75}
+.gchips button[aria-pressed=true]{background:var(--m);color:#fff}
+.gchips button:focus-visible{outline:2px solid var(--g);outline-offset:2px}
+.meet{display:grid;grid-template-columns:minmax(260px,400px) 1fr;gap:40px;align-items:center;max-width:1000px;margin:0 auto}
+.meet-art{position:relative;background:var(--m);border-radius:200px 200px 24px 24px;padding:70px 24px 0;box-shadow:0 0 0 10px var(--c),0 0 0 12px var(--g)}
+.meet-art img{display:block;width:85%;margin:0 auto}
+.bubble{position:absolute;top:18px;right:-14px;background:#fff;border:2px solid var(--g);border-radius:18px;padding:10px 16px;text-align:center;box-shadow:3px 3px 0 rgba(74,44,32,.2)}
+.bubble b{display:block;color:var(--m);font-size:20px}.bubble span{font-size:14px}
+.bubble::after{content:"";position:absolute;left:22px;bottom:-11px;border:10px solid transparent;border-top-color:var(--g);border-bottom:0}
+.meet-txt h2{text-align:left}.meet-txt h2 span{display:block;font-family:Lao,sans-serif;font-size:18px;color:var(--w);opacity:.75}
+.traits{list-style:none;padding:0;margin:18px 0 0;display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.meet-head{display:flex;align-items:center;justify-content:space-between;gap:16px}
+.nuan-char{display:flex;align-items:center;gap:10px;margin:0;font-size:13px;line-height:1.3;color:var(--w)}.nuan-char .han{font-family:"Noto Serif CJK SC","Songti SC","SimSun",serif;font-size:64px;line-height:1;color:var(--g);font-weight:700}
+.persona{list-style:none;padding:0;margin:14px 0 0;display:flex;flex-wrap:wrap;gap:8px}.persona li{background:var(--m);color:var(--c);border-radius:99px;padding:5px 14px;font-weight:700;font-size:14px}.persona span{font-weight:500;opacity:.85;margin-left:4px}
+.traits li{background:#fff;border:1.5px solid rgba(201,154,60,.7);border-radius:14px;padding:12px;text-align:center;display:flex;flex-direction:column;gap:4px}
+.traits b{color:var(--w);font-size:16px}.traits span{color:var(--m);font-size:13px;line-height:1.35}
 .mwrap{display:grid;grid-template-columns:250px 1fr;gap:24px;align-items:start}
 .mtabs{position:sticky;top:76px;display:flex;flex-direction:column;gap:8px}
 .mt{display:flex;align-items:center;gap:10px;text-align:left;border:2px solid transparent;background:#fff;border-radius:14px;padding:8px 12px;font:inherit;font-weight:700;color:var(--w);cursor:pointer;transition:.15s}
@@ -135,12 +160,12 @@ details p{margin:8px 0 0}
 iframe{width:100%;height:340px;border:0;border-radius:16px}
 footer{margin-top:60px;background:var(--m);color:var(--c);padding:30px 0;text-align:center;font-size:15px;border-top:3px solid var(--g)}
 footer a{color:#F2D9A8}
-@media(max-width:760px){header.top nav{display:none}.burger{display:flex}.grid2,.hh .deal,.photos,.play{grid-template-columns:1fr}.mwrap{grid-template-columns:1fr;gap:12px}.vsw{width:100%}.vsw button{flex:1;padding:8px 10px;line-height:1.25}.vsw button span{display:block}.bk{grid-template-columns:1fr;padding:18px}.mtabs{flex-direction:row;overflow-x:auto;top:var(--hh,64px);z-index:5;background:var(--c);padding:8px 2px;margin:0 -4px;scrollbar-width:none}.mt{flex:none;padding:6px 12px}.mt .ic{width:28px;height:28px}.hh>img{position:static;height:180px;display:block;margin:10px auto 0}.hh{padding:24px}.hh .big{font-size:28px}}
+@media(max-width:760px){header.top nav{display:none}.burger{display:flex}.grid2,.hh .deal,.photos,.play{grid-template-columns:1fr}.mwrap{grid-template-columns:1fr;gap:12px}.vsw{width:100%}.vsw button{flex:1;padding:8px 10px;line-height:1.25}.vsw button span{display:block}.bk{grid-template-columns:1fr;padding:18px}.play2{grid-template-columns:1fr}.meet{grid-template-columns:1fr;gap:28px}.meet-art{max-width:320px;margin:0 auto}.bubble{right:-6px}.meet-txt h2{text-align:center}.traits{grid-template-columns:1fr}.meet-head{flex-direction:column}.persona{justify-content:center}.phone{max-width:240px;margin:0 auto}.ph{font-size:30px}.mtabs{flex-direction:row;overflow-x:auto;top:var(--hh,64px);z-index:5;background:var(--c);padding:8px 2px;margin:0 -4px;scrollbar-width:none}.mt{flex:none;padding:6px 12px}.mt .ic{width:28px;height:28px}.hh>img{position:static;height:180px;display:block;margin:10px auto 0}.hh{padding:24px}.hh .big{font-size:28px}}
 </style>
 </head>
 <body>
-<header class="top"><div class="wrap"><img src="img/logo.webp" alt="NUAN logo"><nav><a href="#about">About</a><a href="#who">Who it&#39;s for</a><a href="#menu">Menu</a><a href="#happy-hour">Happy Hour</a><a href="#booking">Book</a><a href="#find-us">Find us</a><a href="#faq">FAQ</a></nav><button class="burger" type="button" aria-label="Open navigation" aria-expanded="false" aria-controls="mnav"><span></span><span></span><span></span></button></div></header>
-<div class="mnav" id="mnav" hidden><ul><li><a href="#about"><span class="en">About</span><span class="lo" lang="lo">ກ່ຽວກັບຮ້ານ</span></a></li><li><a href="#who"><span class="en">Who it&#x27;s for</span><span class="lo" lang="lo">ເໝາະກັບໃຜ</span></a></li><li><a href="#menu"><span class="en">Menu</span><span class="lo" lang="lo">ເມນູ ແລະ ລາຄາ</span></a></li><li><a href="#happy-hour"><span class="en">Happy Hour</span><span class="lo" lang="lo">ແຮັບປີ້ອາວ 17:00–20:00</span></a></li><li><a href="#booking"><span class="en">Book a table</span><span class="lo" lang="lo">ຈອງໂຕະ</span></a></li><li><a href="#find-us"><span class="en">Find us</span><span class="lo" lang="lo">ແຜນທີ່ ແລະ ເວລາເປີດ</span></a></li><li><a href="#faq"><span class="en">FAQ</span><span class="lo" lang="lo">ຄຳຖາມທີ່ພົບເລື້ອຍ</span></a></li></ul><div class="mnav-act"><a class="btn wa" href="#booking">Book a table</a><a class="btn ghost-c" href="tel:+8562099938683">Call +856 20 99 938 683</a></div></div>
+<header class="top"><div class="wrap"><img src="img/logo.webp" alt="NUAN logo"><nav><a href="#about">About</a><a href="#who">Who it&#39;s for</a><a href="#menu">Menu</a><a href="#promotions">Promotions</a><a href="#booking">Book</a><a href="#find-us">Find us</a><a href="#faq">FAQ</a></nav><button class="burger" type="button" aria-label="Open navigation" aria-expanded="false" aria-controls="mnav"><span></span><span></span><span></span></button></div></header>
+<div class="mnav" id="mnav" hidden><ul><li><a href="#about"><span class="en">About</span><span class="lo" lang="lo">ກ່ຽວກັບຮ້ານ</span></a></li><li><a href="#who"><span class="en">Who it&#x27;s for</span><span class="lo" lang="lo">ເໝາະກັບໃຜ</span></a></li><li><a href="#menu"><span class="en">Menu</span><span class="lo" lang="lo">ເມນູ ແລະ ລາຄາ</span></a></li><li><a href="#promotions"><span class="en">Promotions</span><span class="lo" lang="lo">ໂປຣໂມຊັ່ນ · Happy Hour · ເກມ</span></a></li><li><a href="#booking"><span class="en">Book a table</span><span class="lo" lang="lo">ຈອງໂຕະ</span></a></li><li><a href="#find-us"><span class="en">Find us</span><span class="lo" lang="lo">ແຜນທີ່ ແລະ ເວລາເປີດ</span></a></li><li><a href="#faq"><span class="en">FAQ</span><span class="lo" lang="lo">ຄຳຖາມທີ່ພົບເລື້ອຍ</span></a></li></ul><div class="mnav-act"><a class="btn wa" href="#booking">Book a table</a><a class="btn ghost-c" href="tel:+8562099938683">Call +856 20 99 938 683</a></div></div>
 <div class="hero"><img src="img/cover.jpg" alt="NUAN Home-Cooked Restaurant & Bar, Vientiane, with Nong Nuan the mascot" width="1640" height="624"></div>
 <main class="wrap">
 <section class="intro" id="about">
@@ -149,6 +174,24 @@ footer a{color:#F2D9A8}
 <p class="lo-line" lang="lo">ອາຫານ Asian Fusion ແບບເຮັດກິນຢູ່ບ້ານ ໃນເຮືອນສະໄຕລ໌ວຽງຈັນວິນເທຈ</p>
 <ul class="pills"><li>Plant-based meat</li><li>Vegan friendly</li><li>Dim sum &amp; noodles</li><li>Draught Beerlao</li><li>Air-conditioned</li></ul>
 <div class="cta"><a class="btn" href="https://maps.google.com/maps?cid=17937373776264326982">Get directions</a><a class="btn alt" href="tel:+8562099938683">Call +856 20 99 938 683</a><a class="btn ghost" href="#menu">See the menu</a></div>
+</section>
+
+<section class="block" id="nong-nuan">
+<div class="meet">
+<div class="meet-art"><div class="bubble"><b lang="lo">ກິນເຂົ້າແລ້ວບໍ?</b><span>Have you eaten yet?</span></div><img src="img/nn_rice.webp" alt="Nong Nuan, NUAN's mascot, holding a steaming bowl of rice" loading="lazy"></div>
+<div class="meet-txt">
+<div class="meet-head"><h2>Meet Nong Nuan <span lang="lo">ນ້ອງນວນ</span></h2><p class="nuan-char"><span class="han" lang="zh">暖</span><span>nuǎn · warm<br><span lang="lo">ແປວ່າ ອົບອຸ່ນ</span></span></p></div>
+<p>A Lao girl with Chinese roots, the daughter of a Vientiane family, who came home to run the family kitchen. Her name comes from 暖, meaning warm. She believes the best food is food cooked for people at home.</p>
+<p lang="lo">ຍິງສາວລາວເຊື້ອສາຍຈີນ ລູກສາວຄອບຄົວເຮືອນແຖວກາງນະຄອນວຽງຈັນ ທີ່ກັບມາສືບທອດຮ້ານອາຫານຂອງເຮືອນ. ຊື່ "ນວນ" ມາຈາກ 暖 ທີ່ແປວ່າ ອົບອຸ່ນ. ນາງເຊື່ອວ່າ ອາຫານທີ່ແຊບທີ່ສຸດ ຄືອາຫານທີ່ເຮັດໃຫ້ຄົນໃນເຮືອນກິນ.</p>
+<ul class="traits">
+<li><b lang="lo">ໄມ້ສຽບຜົມສີຄຳ</b><span>Gold hairpin: our Lao-Chinese roots</span></li>
+<li><b lang="lo">ແກ້ມສີບານເຢັນ</b><span>Rosy cheeks: a sign of warmth</span></li>
+<li><b lang="lo">ເຂົ້າຮ້ອນໆ ຈາກຄົວ</b><span>Hot rice: home-style, made fresh for every plate</span></li>
+<li><b lang="lo">ຜ້າກັນເປື້ອນສີຂຽວ</b><span>Green apron: the same green as our front door</span></li>
+</ul>
+<ul class="persona" aria-label="Nong Nuan's personality"><li>Warm <span lang="lo">ອົບອຸ່ນ</span></li><li>Smiling <span lang="lo">ຍິ້ມແຍ້ມ</span></li><li>Tidy <span lang="lo">ມັກສະອາດ</span></li><li>Great host <span lang="lo">ບໍລິການເກັ່ງ</span></li><li>Thrifty <span lang="lo">ປະຢັດ</span></li></ul>
+</div>
+</div>
 </section>
 
 <section class="block">
@@ -169,20 +212,26 @@ footer a{color:#F2D9A8}
 <p class="good"><b>Good to know:</b> Closed on Tuesdays. · Dim sum is steamed to order, so allow about 15 minutes. · Busy evenings can be slower; come before 18:00 or book ahead by phone. · Prices exclude 10% VAT.</p>
 </section>
 
-<section class="block" id="happy-hour">
+<section class="block" id="promotions">
+<h2>Promotions</h2><p class="sub">Deals running now at NUAN. <span lang="lo">ໂປຣໂມຊັ່ນຂອງຮ້ານນວນ</span></p>
+
+<div id="happy-hour">
 <div class="hh"><h2>Happy Hour · 5–8 PM</h2>
 <p>Every opening day. <span lang="lo">ທຸກມື້ ຍົກເວັ້ນວັນອັງຄານ</span></p>
 <div class="deal"><div><img class="dimg" src="img/hh_mugs.webp" alt="3 glasses of draught Beerlao, one free" loading="lazy"><b>Draught Beerlao</b><br>Buy 2 glasses, get 1 free<div class="big">3 glasses · 50,000 LAK</div><small>usually 75,000</small></div>
 <div><img class="dimg" src="img/hh_towers.webp" alt="3 beer towers, one free" loading="lazy"><b>Beer tower 2.5 L</b><br>Buy 2 towers, get 1 free<div class="big">3 towers · 398,000 LAK</div><small>7.5 L of draught Beerlao</small></div></div>
 <small>Drink prices exclude 10% VAT. <span lang="lo">ລາຄາບໍ່ລວມ VAT 10%</span></small>
 <img src="img/nn_cheer.webp" alt="Nong Nuan celebrating happy hour" loading="lazy"></div>
-</section>
+</div>
 
-<section class="block" id="play">
-<div class="card play"><img src="img/nn_welcome.webp" alt="Nong Nuan, the NUAN mascot" loading="lazy">
-<div><h2 style="text-align:left">Play with NUAN</h2>
-<p>Waiting for your dim sum? Scan the QR code on your table and play five free mini-games with Nong Nuan: Fortune Sticks, Match It!, Catch It!, Connect 4 and Tarot. Clear level 3 in Match It!, Catch It! or Connect 4 for a chance to get a free drink (selected drinks) or 10% off food. One prize per table.</p>
-<p lang="lo">ສະແກນ QR ເທິງໂຕະ ຫຼິ້ນເກມຟຣີ 5 ເກມ ກັບນ້ອງນວນ</p></div></div>
+
+<div id="play" class="card play2">
+<div class="phone"><video id="gvid" src="video/all.mp4" poster="video/all.jpg" controls playsinline preload="none" muted></video></div>
+<div><h3 class="ph">Play with NUAN <span lang="lo">ຫຼິ້ນເກມກັບນ້ອງນວນ</span></h3>
+<p>Waiting for your dim sum? Scan the QR code on your table and play five free mini-games with Nong Nuan. Clear level 3 in Match It!, Catch It! or Connect 4 for a chance to get a free drink (selected drinks) or 10% off food. One prize per table.</p>
+<p lang="lo">ສະແກນ QR ເທິງໂຕະ ຫຼິ້ນເກມຟຣີ 5 ເກມ ກັບນ້ອງນວນ · ຜ່ານດ່ານ 3 ລຸ້ນຮັບເຄື່ອງດື່ມຟຣີ ຫຼື ສ່ວນຫຼຸດອາຫານ 10%</p>
+<div class="gchips" role="group" aria-label="Watch a game"><button type="button" data-g="all" aria-pressed="true">All 5 games<span lang="lo">ທັງ 5 ເກມ</span></button><button type="button" data-g="fortune" aria-pressed="false">Fortune Sticks<span lang="lo"></span></button><button type="button" data-g="match" aria-pressed="false">Match It!<span lang="lo"></span></button><button type="button" data-g="catch" aria-pressed="false">Catch It!<span lang="lo"></span></button><button type="button" data-g="connect4" aria-pressed="false">Connect 4<span lang="lo"></span></button><button type="button" data-g="tarot" aria-pressed="false">Tarot<span lang="lo"></span></button></div></div>
+</div>
 </section>
 
 <section class="block" id="menu">
@@ -266,6 +315,15 @@ Open 09:00–22:30 · Closed Tuesdays · <a href="tel:+8562099938683">+856 20 99
   m.addEventListener('click',function(e){var a=e.target.closest('a');if(!a)return;set(false);var h=a.getAttribute('href');if(h.charAt(0)!=='#')return;var t=document.getElementById(h.slice(1));if(!t)return;e.preventDefault();history.replaceState(null,'',h);t.scrollIntoView();setTimeout(function(){t.scrollIntoView();},700);});
   document.addEventListener('keydown',function(e){if(e.key==='Escape'&&!m.hidden){set(false);b.focus();}});
   window.addEventListener('resize',function(){if(window.innerWidth>760&&!m.hidden)set(false);});
+})();
+</script>
+<script>
+(function(){
+  var t=new Date().toISOString().slice(0,10);
+  [].forEach.call(document.querySelectorAll('.promo'),function(p){if(t<p.dataset.start||t>p.dataset.end)p.remove();});
+  var pr=document.querySelector('.promos');if(pr&&!pr.children.length)pr.remove();
+  var v=document.getElementById('gvid'),bs=[].slice.call(document.querySelectorAll('.gchips button'));if(!v)return;
+  bs.forEach(function(b){b.addEventListener('click',function(){bs.forEach(function(x){x.setAttribute('aria-pressed',x===b?'true':'false');});v.poster='video/'+b.dataset.g+'.jpg';v.src='video/'+b.dataset.g+'.mp4';v.muted=true;var pp=v.play();if(pp&&pp.catch)pp.catch(function(){});});});
 })();
 </script>
 <script src="js/page-flip.browser.js"></script>
