@@ -114,10 +114,11 @@ section[id]{scroll-margin-top:72px}
 .bubble b{display:block;color:var(--m);font-size:20px}.bubble span{font-size:14px}
 .bubble::after{content:"";position:absolute;left:22px;bottom:-11px;border:10px solid transparent;border-top-color:var(--g);border-bottom:0}
 .meet-txt h2{text-align:left}.meet-txt h2 span{display:block;font-family:Lao,sans-serif;font-size:18px;color:var(--w);opacity:.75}
-.traits{list-style:none;padding:0;margin:18px 0 0;display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.msub{font-family:IS;font-weight:700;font-size:17px;color:var(--m);margin:22px 0 0}.msub span{font-family:Lao,sans-serif;font-weight:500;color:var(--w);opacity:.75;margin-left:6px;font-size:15px}
+.traits{list-style:none;padding:0;margin:10px 0 0;display:grid;grid-template-columns:1fr 1fr;gap:10px}
 .meet-head{display:flex;align-items:center;justify-content:space-between;gap:16px}
 .nuan-char{display:flex;align-items:center;gap:10px;margin:0;font-size:13px;line-height:1.3;color:var(--w)}.nuan-char .han{font-family:"Noto Serif CJK SC","Songti SC","SimSun",serif;font-size:64px;line-height:1;color:var(--g);font-weight:700}
-.persona{list-style:none;padding:0;margin:14px 0 0;display:flex;flex-wrap:wrap;gap:8px}.persona li{background:var(--m);color:var(--c);border-radius:99px;padding:5px 14px;font-weight:700;font-size:14px}.persona span{font-weight:500;opacity:.85;margin-left:4px}
+.persona{list-style:none;padding:0;margin:10px 0 0;display:flex;flex-wrap:wrap;gap:8px}.persona li{background:var(--m);color:var(--c);border-radius:99px;padding:5px 14px;font-weight:700;font-size:14px}.persona span{font-weight:500;opacity:.85;margin-left:4px}
 .traits li{background:#fff;border:1.5px solid rgba(201,154,60,.7);border-radius:14px;padding:12px;text-align:center;display:flex;flex-direction:column;gap:4px}
 .traits b{color:var(--w);font-size:16px}.traits span{color:var(--m);font-size:13px;line-height:1.35}
 .mwrap{display:grid;grid-template-columns:250px 1fr;gap:24px;align-items:start}
@@ -160,7 +161,7 @@ details p{margin:8px 0 0}
 iframe{width:100%;height:340px;border:0;border-radius:16px}
 footer{margin-top:60px;background:var(--m);color:var(--c);padding:30px 0;text-align:center;font-size:15px;border-top:3px solid var(--g)}
 footer a{color:#F2D9A8}
-@media(max-width:760px){header.top nav{display:none}.burger{display:flex}.grid2,.hh .deal,.photos,.play{grid-template-columns:1fr}.mwrap{grid-template-columns:1fr;gap:12px}.vsw{width:100%}.vsw button{flex:1;padding:8px 10px;line-height:1.25}.vsw button span{display:block}.bk{grid-template-columns:1fr;padding:18px}.play2{grid-template-columns:1fr}.gchips{grid-template-columns:repeat(2,minmax(0,1fr))}.meet{grid-template-columns:1fr;gap:28px}.meet-art{max-width:320px;margin:0 auto}.bubble{right:-6px}.meet-txt h2{text-align:center}.traits{grid-template-columns:1fr}.meet-head{flex-direction:column}.persona{justify-content:center}.phone{max-width:240px;margin:0 auto}.ph{font-size:30px}.mtabs{flex-direction:row;overflow-x:auto;top:var(--hh,64px);z-index:5;background:var(--c);padding:8px 2px;margin:0 -4px;scrollbar-width:none}.mt{flex:none;padding:6px 12px}.mt .ic{width:28px;height:28px}.hh>img{position:static;height:180px;display:block;margin:10px auto 0}.hh{padding:24px}.hh .big{font-size:28px}}
+@media(max-width:760px){header.top nav{display:none}.burger{display:flex}.grid2,.hh .deal,.photos,.play{grid-template-columns:1fr}.mwrap{grid-template-columns:1fr;gap:12px}.vsw{width:100%}.vsw button{flex:1;padding:8px 10px;line-height:1.25}.vsw button span{display:block}.bk{grid-template-columns:1fr;padding:18px}.play2{grid-template-columns:1fr}.gchips{grid-template-columns:repeat(2,minmax(0,1fr))}.meet{grid-template-columns:1fr;gap:28px}.meet-art{max-width:320px;margin:0 auto}.bubble{right:-6px}.meet-txt h2{text-align:center}.traits{grid-template-columns:1fr}.meet-head{flex-direction:column}.msub{text-align:center}.msub span{display:block;margin:2px 0 0}.persona{justify-content:center}.phone{max-width:240px;margin:0 auto}.ph{font-size:30px}.mtabs{flex-direction:row;overflow-x:auto;top:var(--hh,64px);z-index:5;background:var(--c);padding:8px 2px;margin:0 -4px;scrollbar-width:none}.mt{flex:none;padding:6px 12px}.mt .ic{width:28px;height:28px}.hh>img{position:static;height:180px;display:block;margin:10px auto 0}.hh{padding:24px}.hh .big{font-size:28px}}
 </style>
 </head>
 <body>
@@ -183,12 +184,14 @@ footer a{color:#F2D9A8}
 <div class="meet-head"><h2>Meet Nong Nuan <span lang="lo">ນ້ອງນວນ</span></h2><p class="nuan-char"><span class="han" lang="zh">暖</span><span>nuǎn · warm<br><span lang="lo">ແປວ່າ ອົບອຸ່ນ</span></span></p></div>
 <p>A Lao girl with Chinese roots, the daughter of a Vientiane family, who came home to run the family kitchen. Her name comes from 暖, meaning warm. She believes the best food is food cooked for people at home.</p>
 <p lang="lo">ຍິງສາວລາວເຊື້ອສາຍຈີນ ລູກສາວຄອບຄົວເຮືອນແຖວກາງນະຄອນວຽງຈັນ ທີ່ກັບມາສືບທອດຮ້ານອາຫານຂອງເຮືອນ. ຊື່ "ນວນ" ມາຈາກ 暖 ທີ່ແປວ່າ ອົບອຸ່ນ. ນາງເຊື່ອວ່າ ອາຫານທີ່ແຊບທີ່ສຸດ ຄືອາຫານທີ່ເຮັດໃຫ້ຄົນໃນເຮືອນກິນ.</p>
+<h3 class="msub">Her signature details <span lang="lo">ສັນຍາລັກຂອງນ້ອງນວນ</span></h3>
 <ul class="traits">
 <li><b lang="lo">ໄມ້ສຽບຜົມສີຄຳ</b><span>Gold hairpin: our Lao-Chinese roots</span></li>
 <li><b lang="lo">ແກ້ມສີບານເຢັນ</b><span>Rosy cheeks: a sign of warmth</span></li>
 <li><b lang="lo">ເຂົ້າຮ້ອນໆ ຈາກຄົວ</b><span>Hot rice: home-style, made fresh for every plate</span></li>
 <li><b lang="lo">ຜ້າກັນເປື້ອນສີຂຽວ</b><span>Green apron: the same green as our front door</span></li>
 </ul>
+<h3 class="msub">Her personality <span lang="lo">ນິໄສຂອງນ້ອງນວນ</span></h3>
 <ul class="persona" aria-label="Nong Nuan's personality"><li>Warm <span lang="lo">ອົບອຸ່ນ</span></li><li>Smiling <span lang="lo">ຍິ້ມແຍ້ມ</span></li><li>Tidy <span lang="lo">ມັກສະອາດ</span></li><li>Attentive <span lang="lo">ບໍລິການເກັ່ງ</span></li><li>Hard-working <span lang="lo">ຂະຫຍັນ</span></li><li>Patient <span lang="lo">ອົດທົນ</span></li></ul>
 </div>
 </div>
