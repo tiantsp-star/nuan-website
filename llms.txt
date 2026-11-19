@@ -124,6 +124,7 @@ Ask for no egg if you eat vegan.
 - Mala popcorn chicken / ໄກ່ປັອບໝ່າລ່າ: 65,000 LAK
 - Mala crispy chicken skin / ໜັງໄກ່ໝ່າລ່າ: 65,000 LAK
 - Fried squid / ທອດປາມຶກ: 80,000 LAK
+- Deep-fried beef tendon / ທອດເອັນເຫລືອງ: 68,000 LAK
 - Fried enoki mushrooms / ເຫັດເຂັມທອດ: 50,000 LAK (plant-based)
 - French fries / ທອດມັນຝຣັ່ງ: 50,000 LAK (plant-based)
 - Fried mantou buns / ທອດໝັ່ນໂຖ: 35,000 LAK
